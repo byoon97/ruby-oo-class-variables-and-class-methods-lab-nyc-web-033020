@@ -1,11 +1,14 @@
 require 'pry'
 
 class Song
+
+  attr_accessor = :name, :genre, :artist
+
   @@artists = []
   @@genres = []
   @@count = 0
 
-  attr_accessor = :name, :genre, :artist
+
 
   def initialize(name, genre, artist)
     @@artists << @artist
