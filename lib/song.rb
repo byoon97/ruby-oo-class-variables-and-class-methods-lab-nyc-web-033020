@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   @@artist = []
   @@genres = []
@@ -13,4 +15,6 @@ class Song
     @genre = genre
     @artist = genre
   end
+
+  binding.pry
 end
