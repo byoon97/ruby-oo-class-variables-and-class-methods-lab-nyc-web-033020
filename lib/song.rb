@@ -2,19 +2,18 @@ require 'pry'
 
 class Song
 
-  attr_accessor = :name, :genre, :artist
-
+  attr_accessor :name, :artist, :genre
+  @@count = 0
   @@artists = []
   @@genres = []
-  @@count = 0
 
-  def initialize(name, genre, artist)
+  def initialize(song_name,artist,genre)
+    @name = song_name
+    @artist = artist
+    @genre = genre
+    @@count += 1
     @@artists << artist
     @@genres << genre
-    @@count += 1
-    @name = name
-    @genre = genre
-    @artist = artist
   end
 
   def self.count
